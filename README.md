@@ -71,6 +71,10 @@ touch list.json
 ]
 ```
 
+一切就绪后，使用 `git push` 命令将代码推送到仓库上。
+
+然后修改你的 workers，设置 github_base 为你的仓库名称，例如 `kasuganosoras/cloudflare-worker-blog`
+
 现在访问你的 Workers 即可看到文章。
 
 ## 开源协议
