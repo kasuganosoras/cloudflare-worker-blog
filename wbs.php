@@ -163,7 +163,7 @@ function newpost() {
 			$newtitle = $input;
 		}
 	}
-	passthru("touch {$base_dir}/posts/{$input}.md && vim {$base_dir}/posts/{$input}.md");
+	passthru("touch \"{$base_dir}/posts/{$newname}.md\" && vim \"{$base_dir}/posts/{$newname}.md\"");
 	echo date("[Y-m-d H:i:s] ") . "\033[1;32m文章已储存，接下来您可以使用 wbs u 命令来上传到 Github\033[0m\n";
 }
 function config() {
