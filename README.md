@@ -1,7 +1,7 @@
 # Cloudflare workers blog
 利用 CloudFlare workers + Github Pages 实现的动态博客
 
-演示地址：https://blue-sun-6fe4.zerodream.workers.dev
+演示地址：https://blog.natfrp.org/
 
 ## 如何部署
 
