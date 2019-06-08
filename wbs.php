@@ -157,8 +157,8 @@ function newpost() {
 		$input = trim(fgets(STDIN));
 		if(empty($input)) {
 			echo date("[Y-m-d H:i:s] ") . "\033[1;31m[ERROR]\033[0m 标题不能为空！\n";
-		} elseif(mb_strlen($input) > 16) {
-			echo date("[Y-m-d H:i:s] ") . "\033[1;31m[ERROR]\033[0m 标题不能超过 16 个字！\n";
+		} elseif(mb_strlen($input) > 32) {
+			echo date("[Y-m-d H:i:s] ") . "\033[1;31m[ERROR]\033[0m 标题不能超过 32 个字！\n";
 		} else {
 			$newtitle = $input;
 		}
