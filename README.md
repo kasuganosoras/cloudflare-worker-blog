@@ -83,6 +83,24 @@ touch list.json
 
 我建议在实际使用时将这些资源下载下来放到其他地方，或者使用 CDN，因为这是我自己的演示环境域名，并不稳定。
 
+## WBS 管理工具
+
+这个工具使用 PHP 开发，需要安装 PHP 运行环境，文件就是 wbs.php，用于快捷管理文章。
+
+将 wbs.php 复制到任意目录，例如 `/usr/local/tools/`，然后编辑 `~/.bashrc`，结尾新增一行
+
+```bash
+alias wbs='php /usr/local/tools/wbs.php'
+```
+
+接着输入 `source ~/.bashrc` 更新。
+
+现在你就可以使用 `wbs` 命令来进行文章操作了，第一次运行会要求输入项目目录（就是你储存文章的项目）
+
+- wbs n / wbs new 写一篇新文章
+- wbs u / wbs upload 上传已经写好的文章
+- wbs c / wbs config 重新配置 wbs
+
 ## 开源协议
 
 本项目使用 MIT 协议开源。
