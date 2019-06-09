@@ -1,9 +1,9 @@
 <?php
 /**
  *
- *	Workers Blog Manager Tools
+ *    Workers Blog Manager Tools
  *
- *	https://github.com/kasuganosoras/cloudflare-worker-blog
+ *    https://github.com/kasuganosoras/cloudflare-worker-blog
  *
  */
 
@@ -139,6 +139,10 @@ function update() {
 }
 function newpost() {
 	global $base_dir;
+	$list = json_decode(file_get_contents("{$base_dir}/list.json"), true);
+	if(!$list) {
+		exit("\033[1;31m[ERROR]\033[0m 读取列表失败！中断请求。\n");
+	}
 	while(empty($newname)) {
 		echo date("[Y-m-d H:i:s] ") . "请输入新文章的 ID（A-Za-z0-9 _ -）\n> ";
 		$input = trim(fgets(STDIN));
@@ -164,6 +168,12 @@ function newpost() {
 		}
 	}
 	passthru("touch \"{$base_dir}/posts/{$newname}.md\" && vim \"{$base_dir}/posts/{$newname}.md\"");
+	$list[] = Array(
+		'title' => $newtitle,
+		'time' => date("Y-m-d H:i:s"),
+		'file' => "posts/{$newname}"
+	);
+	file_put_contents("{$base_dir}/list.json", json_encode($list, JSON_UNESCAPED_UNICODE));
 	echo date("[Y-m-d H:i:s] ") . "\033[1;32m文章已储存，接下来您可以使用 wbs u 命令来上传到 Github\033[0m\n";
 }
 function config() {
