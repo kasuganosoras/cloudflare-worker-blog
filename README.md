@@ -77,6 +77,10 @@ touch list.json
 
 现在访问你的 Workers 即可看到文章。
 
+## 自定义 Workers 绑定域名
+
+请阅读此文章：https://blog.natfrp.org/?p=posts%2Fworkers-custom-domain.md
+
 ## JavaScript 资源
 
 如果你仔细查看 workers.js，你会看到一些 https://cn.tql.ink:4443/ 的资源文件
