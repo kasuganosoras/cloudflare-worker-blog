@@ -14,7 +14,7 @@ Workers 是 Cloudflare 提供的边缘计算服务，原本是收费的，现在
 
 ![img](https://i.natfrp.org/a89af0dd723f5be7a9d779509f06657f.png)
 
-将 workers.js 的内容根据自己情况修改，然后替换 Cloudflare 在线编辑器的默认代码。
+将 workers.js（或者 worker-sakurafrp.js） 的内容根据自己情况修改，然后替换 Cloudflare 在线编辑器的默认代码。
 
 点击 Save and deploy 保存。
 
