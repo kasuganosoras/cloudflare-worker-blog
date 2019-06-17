@@ -110,6 +110,12 @@ alias wbs='php /usr/local/tools/wbs.php'
 - wbs u / wbs upload 上传已经写好的文章
 - wbs c / wbs config 重新配置 wbs
 
+## 评论系统
+
+workers-sakurafrp.js 默认使用了 Sakura Comments 评论系统，你可以在我的博客下方留言申请域名白名单，或者更换为其他的评论系统。
+
+文章地址：https://blog.natfrp.org/2 （你还可以在 Issues 里提出，通过任意方式告诉我即可）
+
 ## 开源协议
 
-本项目使用 MIT 协议开源。
+本项目使用 MIT 协议开源，在遵守协议的前提下可任意修改，创作自己的主题等。
