@@ -7,7 +7,7 @@ var default_intitle	 = "SakuraFrp Blog";								// 站点名称（显示在首�
 var default_description  = "欢迎访问 Sakura Frp 官方博客，本博客分享与 Frp 相关的技术以及记录一些日常。"; 	// 站点简介，有利于 SEO
 var site_domain		 = "blog.natfrp.org";								// 站点域名
 var site_subtitle	 = "樱花内网穿透官方博客";							// 站点副标题
-var site_favicon	 = "https://cn.tql.ink:4443/gitea/img/favicon.png";				// 站点 Logo
+var site_favicon	 = "https://cdn.zerodream.net/gitea/img/favicon.png";				// 站点 Logo
 
 // 博主信息
 var owner_name = "Akkariin";									// 博主名字
@@ -15,15 +15,15 @@ var owner_logo = "https://secure.gravatar.com/avatar/80962ca1ced98d0e679b2bc315d
 var owner_desc = "鸽子王/咸鱼/phper，日常水贴摸鱼，佛系出租服务器";					// 博主简介
 
 // 设置站点资源文件地址
-var css_bootstrap	 = "https://cn.tql.ink:4443/css/bootstrap.min.css";	// Boostrap css 文件地址
-var css_hljs_github   = "https://cn.tql.ink:4443/css/highlight.js/github.css";  // Highlight js css 地址
-var js_jquery		 = "https://cn.tql.ink:4443/js/jquery.min.js";		// JQuery 地址
-var js_bootstrap	= "https://cn.tql.ink:4443/js/bootstrap.min.js";	// Bootstrap 地址
-var js_instantclick   = "https://cn.tql.ink:4443/js/instantclick.min.js";	// InstantClick 地址
-var js_showdown	 = "https://cn.tql.ink:4443/js/showdown.min.js";		// Showdown 地址
-var js_showdown_table = "https://cn.tql.ink:4443/js/showdown-table.min.js";	// Showdown table 地址
-var js_highlight	= "https://cn.tql.ink:4443/js/highlight.min.js";	// Highlight 地址
-var js_highlight_pack = "https://cn.tql.ink:4443/js/highlight.pack.js";		// Highlight pack 地址
+var css_bootstrap	 = "https://cdn.zerodream.net/css/bootstrap.min.css";		// Boostrap css 文件地址
+var css_hljs_github   = "https://cdn.zerodream.net/css/highlight.js/github.css";  	// Highlight js css 地址
+var js_jquery		 = "https://cdn.zerodream.net/js/jquery.min.js";		// JQuery 地址
+var js_bootstrap	= "https://cdn.zerodream.net/js/bootstrap.min.js";		// Bootstrap 地址
+var js_instantclick   = "https://cdn.zerodream.net/js/instantclick.min.js";		// InstantClick 地址
+var js_showdown	 = "https://cdn.zerodream.net/js/showdown.min.js";			// Showdown 地址
+var js_showdown_table = "https://cdn.zerodream.net/js/showdown-table.min.js";		// Showdown table 地址
+var js_highlight	= "https://cdn.zerodream.net/js/highlight.min.js";		// Highlight 地址
+var js_highlight_pack = "https://cdn.zerodream.net/js/highlight.pack.js";		// Highlight pack 地址
 
 // 这是一些临时变量，无需修改
 var title = "";
@@ -324,7 +324,7 @@ async function bloghandle(request) {
 		<script src="${js_showdown_table}" type="text/javascript"></script>
 		<script src="${js_highlight}"></script>
 		<script src="${js_highlight_pack}"></script>
-		<script src="https://comments.natfrp.org/comments.js?s=2"></script>
+		<script src="https://comments.zerodream.net/comments.js?s=2"></script>
 		<script type="text/javascript">
 			var init = {
 			site: "${site_domain}",
